@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AETHER — a digital creative studio crafting immersive web experiences with fluid motion." />
+  <title>AETHER — Immersive Creative Studio</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" aria-hidden="true"></div>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__inner">
+      <span class="preloader__logo">✦</span>
+      <div class="preloader__bar"><i></i></div>
+      <span class="preloader__count" id="preloaderCount">0</span>
+    </div>
+  </div>
+
+  <!-- Grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="nav reveal-fade" data-nav>
+    <a class="nav__logo" href="#hero">aether<span>✦</span></a>
+    <nav class="nav__links" data-nav-links>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#stats">Stats</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="nav__cta magnetic">Let's talk <span>↗</span></a>
+    <button class="nav__burger" data-burger aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="menu" data-menu aria-hidden="true">
+    <a href="#about" data-menu-link>About</a>
+    <a href="#services" data-menu-link>Services</a>
+    <a href="#work" data-menu-link>Work</a>
+    <a href="#stats" data-menu-link>Stats</a>
+    <a href="#contact" data-menu-link>Contact</a>
+  </div>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__orb hero__orb--a"></div>
+      <div class="hero__orb hero__orb--b"></div>
+      <div class="hero__orb hero__orb--c"></div>
+
+      <p class="hero__eyebrow reveal-rise">✦ Digital creative studio — est. 2026</p>
+      <h1 class="hero__title">
+        <span class="line"><span class="word" data-split>We craft</span></span>
+        <span class="line"><span class="word" data-split><em>motion</em> that</span></span>
+        <span class="line"><span class="word" data-split>moves</span></span>
+        <span class="line txt--grad"><span class="word" data-split>brands.</span></span>
+      </h1>
+      <p class="hero__sub reveal-fade">
+        AETHER builds immersive websites, interfaces and stories — blending design, code
+        and animation into experiences people remember.
+      </p>
+      <div class="hero__actions reveal-rise">
+        <a href="#work" class="btn btn--solid magnetic">View our work <span>↓</span></a>
+        <a href="#contact" class="btn btn--ghost">Get in touch</a>
+      </div>
+
+      <div class="hero__marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Design</span><i>✦</i><span>Motion</span><i>✦</i><span>Code</span><i>✦</i><span>Brand</span><i>✦</i>
+          <span>Design</span><i>✦</i><span>Motion</span><i>✦</i><span>Code</span><i>✦</i><span>Brand</span><i>✦</i>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="about__sticky">
+        <p class="section-tag reveal-fade">01 · About</p>
+        <h2 class="section-title">
+          <span class="reveal-rise">We turn bold</span>
+          <span class="reveal-rise">ideas into <em data-text="living">living</em> interfaces.</span>
+        </h2>
+      </div>
+      <div class="about__body">
+        <p class="about__lead reveal-fade">
+          AETHER is an independent studio of designers and engineers obsessed with the
+          spaces between clicks — the pauses, the motion, the feeling.
+        </p>
+        <p class="reveal-fade">
+          From kinetic identities to buttery-smooth products, we ship work that performs
+          as beautifully as it looks.
+        </p>
+        <ul class="about__tags">
+          <li class="reveal-fade">UI / UX Design</li>
+          <li class="reveal-fade">Creative Development</li>
+          <li class="reveal-fade">Motion Systems</li>
+          <li class="reveal-fade">Brand Experience</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+      <p class="section-tag reveal-fade">02 · Services</p>
+      <h2 class="section-title reveal-rise">What we do<span class="dot">.</span></h2>
+
+      <div class="services__grid">
+        <article class="card tilt" data-tilt>
+          <span class="card__num">01</span>
+          <span class="card__icon">✦</span>
+          <h3>Art Direction</h3>
+          <p>Distinct visual identities and art direction that give brands an unmistakable point of view.</p>
+        </article>
+        <article class="card tilt" data-tilt>
+          <span class="card__num">02</span>
+          <span class="card__icon">◎</span>
+          <h3>Interface Design</h3>
+          <p>Interfaces designed around people — intuitive, accessible and quietly delightful.</p>
+        </article>
+        <article class="card tilt" data-tilt>
+          <span class="card__num">03</span>
+          <span class="card__icon">◉</span>
+          <h3>Creative Dev</h3>
+          <p>High-performance front-ends with motion that feels native to every device.</p>
+        </article>
+        <article class="card tilt" data-tilt>
+          <span class="card__num">04</span>
+          <span class="card__icon">✦</span>
+          <h3>Motion Systems</h3>
+          <p>Reusable animation languages that keep your product consistent end to end.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section class="work" id="work">
+      <p class="section-tag reveal-fade">03 · Selected Work</p>
+      <h2 class="section-title reveal-rise">Recent projects<span class="dot">.</span></h2>
+
+      <div class="work__list">
+        <a href="#" class="work__item reveal-fade" data-work>
+          <span class="work__img" style="--img:linear-gradient(135deg,#7c3aed,#22d3ee)"><i data-glow></i></span>
+          <div class="work__meta">
+            <h3>Prism Analytics</h3>
+            <p>Dashboard · 2026</p>
+          </div>
+          <span class="work__arrow">↗</span>
+        </a>
+        <a href="#" class="work__item reveal-fade" data-work>
+          <span class="work__img" style="--img:linear-gradient(135deg,#f43f5e,#fbbf24)"><i data-glow></i></span>
+          <div class="work__meta">
+            <h3>Noir Sound</h3>
+            <p>Brand · 2025</p>
+          </div>
+          <span class="work__arrow">↗</span>
+        </a>
+        <a href="#" class="work__item reveal-fade" data-work>
+          <span class="work__img" style="--img:linear-gradient(135deg,#10b981,#3b82f6)"><i data-glow></i></span>
+          <div class="work__meta">
+            <h3>Lumen Health</h3>
+            <p>Web app · 2025</p>
+          </div>
+          <span class="work__arrow">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats" id="stats">
+      <div class="stats__item">
+        <span class="stats__num" data-count="120">0</span>
+        <span class="stats__unit">+</span>
+        <p>Projects shipped</p>
+      </div>
+      <div class="stats__item">
+        <span class="stats__num" data-count="38">0</span>
+        <span class="stats__unit">+</span>
+        <p>Global clients</p>
+      </div>
+      <div class="stats__item">
+        <span class="stats__num" data-count="14">0</span>
+        <span class="stats__unit">×</span>
+        <p>Design awards</p>
+      </div>
+      <div class="stats__item">
+        <span class="stats__num" data-count="99">0</span>
+        <span class="stats__unit">%</span>
+        <p>Happiness rate</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <p class="section-tag reveal-fade">04 · Contact</p>
+      <h2 class="section-title contact__title reveal-rise">
+        Got a project?<br />
+        <em data-text="Let's build it.">Let's build it.</em>
+      </h2>
+      <a href="mailto:hello@aether.studio" class="contact__mail reveal-fade">hello@aether.studio</a>
+      <p class="contact__hint reveal-fade">NYC · SF · Remote everywhere</p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 AETHER Studio. Crafted with care.</p>
+    <div class="footer__social">
+      <a href="#" class="magnetic">Dribbble</a>
+      <a href="#" class="magnetic">Instagram</a>
+      <a href="#" class="magnetic">GitHub</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
