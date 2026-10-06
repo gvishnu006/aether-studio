@@ -509,6 +509,45 @@ section.in-view .section-title em[data-text].under { background: var(--grad); -w
 .footer__social a { transition: color .3s; }
 .footer__social a:hover { color: var(--accent-2); }
 
+/* ============ Testimonials ============ */
+.testi__row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.2rem;
+}
+.testi {
+  padding: 2rem 1.8rem;
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  transition: transform .5s var(--ease-expo), border-color .5s;
+}
+.testi:hover { transform: translateY(-6px) rotate(0.4deg); border-color: rgba(34,211,238,.4); }
+.testi p { font-size: 1.05rem; line-height: 1.5; color: var(--ink); }
+.testi::before { content: "“"; display: block; font-size: 3rem; line-height: .6; color: var(--accent-2); margin-bottom: 1rem; }
+.testi footer { margin-top: 1.4rem; color: var(--ink-faint); font-size: .85rem; }
+
+/* ============ Back to top ============ */
+.totop {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 9300;
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 1.2rem;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(16px);
+  transition: opacity .4s, transform .4s var(--ease-expo), visibility .4s, background .4s, border-color .4s;
+}
+.totop.show { opacity: 1; visibility: visible; transform: translateY(0); }
+.totop:hover { background: var(--accent); border-color: var(--accent); }
+
 /* ============ Scrollbar ============ */
 ::-webkit-scrollbar { width: 10px; }
 ::-webkit-scrollbar-track { background: var(--bg); }

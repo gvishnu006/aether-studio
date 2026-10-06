@@ -221,6 +221,15 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && menuOpen) setMenu(false);
 });
 
+/* ---------- Back to top ---------- */
+const toTop = $("[data-to-top]");
+window.addEventListener("scroll", () => {
+  const show = window.scrollY > 600;
+  toTop.classList.toggle("show", show);
+  toTop.setAttribute("aria-hidden", String(!show));
+}, { passive: true });
+toTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" }));
+
 /* ---------- Safe-area fallback: reveal all lines if JS load delayed ---------- */
 setTimeout(() => {
   if (progress < 100) $$(".line").forEach((l) => l.classList.add("in"));
